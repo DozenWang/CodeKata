@@ -3,7 +3,7 @@ package com.bloom_filter;
 import java.util.BitSet;
 
 public class BloomFilter {
-	private final int DEFAULT_SIZE=1<<16;
+	private final int DEFAULT_SIZE=1<<25;
     private  BitSet bitSet;
     private int[] seeds={3,7,11,13,37,41,57,77};
     private SimpleHash[] hashs=new SimpleHash[seeds.length];
